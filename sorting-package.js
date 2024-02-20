@@ -42,13 +42,13 @@ const sort = (width, height, length, mass) => {
     return PACKAGE_TYPE.STANDARD;
 }
 
-const ans = sort(20, 20, 20, 40); // SPECIAL because it is heavy
+const ans = sort(20, 20, 20, 40); // SPECIAL because it is heavy.
 console.log(ans);
-const ans1 = sort(100, 1000, 100, 19); // SPECIAL because it is bulky
+const ans1 = sort(100, 1000, 100, 19); // SPECIAL because it is bulky.
 console.log(ans1);
-const ans2 = sort(100, 1000, 100, 20); // REJECTED
+const ans2 = sort(100, 1000, 100, 20); // REJECTED because it is heavy and bulky.
 console.log(ans2);
-const ans3 = sort(100, 1000, 9, 20); // REJECTED because it is bulk since dimension exceeds 150
+const ans3 = sort(100, 1000, 9, 20); // REJECTED because it is heavy and it is bulky since dimension exceeds 150.
 console.log(ans3);
 const ans4 = sort(100, 100, 9, 19); // STANDARD
 console.log(ans4);
